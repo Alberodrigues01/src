@@ -1,8 +1,7 @@
 
-
 public class Main {
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         Carro carro = new Carro();
         carro.setCor(carro.VERMELHO);
         carro.setMotor(carro.MIL);
