@@ -5,20 +5,20 @@ public class Carro {
     public static final String VERMELHO = "Vermelho";
     public static final String MIL = "Mil";
     public static final String ESPORTIVO = "Esportivo";
-    private Integer quantidadePneus;
-    private Integer quantidadeCalotas;
-    private Integer quantidadeParafusoPneu;
+    private Integer quantidadePortas;
+    private String numeroChassi;
+    private Integer anoFabricacao;
+    private String combustivel;
     private String cor;
     private String motor;
     private String acabamento;
-    private Integer quantidadeFreios;
-    private Integer quantidadeAmortecedores;
 
-    public Integer getQuantidadePneus(){
-        return quantidadePneus = 4;
+
+    public Integer getQuantidadePortas(){
+        return quantidadePortas = 4;
     }
-    public void setQuantidadePneus(Integer quantidadePneus){
-        this.quantidadePneus = quantidadePneus;
+    public void setQuantidadePneus(Integer quantidadePortas){
+        this.quantidadePortas = quantidadePortas;
     }
     public String getCor() {
         return cor;
@@ -27,26 +27,20 @@ public class Carro {
         this.cor = cor;
     }
 
-    public Integer getQuantidadeCalotas() {
-        return quantidadePneus;
-    }
-    public void setQuantidadeCalotas(Integer quantidadeCalotas) {
-        this.quantidadeCalotas = quantidadeCalotas;
+    public String getNumeroChassi() {
+        return numeroChassi = "9BG116GW04C400001";}
+    public void setNumeroChassi(String numeroChassi) {
+        this.numeroChassi = numeroChassi;
     }
 
-    public Integer getQuantidadeParafusoPneu() {
-        return quantidadePneus * 4;
+    public Integer getAnoFabricacao() {
+        return anoFabricacao = 2020;}
+    public void setAnoFabricacao(Integer anoFabricacao) {
+        this.anoFabricacao = anoFabricacao;
     }
-    public void setQuantidadeParafusoPneu(Integer quantidadeParafusoPneu) {
-        this.quantidadeParafusoPneu = quantidadeParafusoPneu;
-    }
-    public Integer getQuantidadeAmortecedores() {return quantidadePneus; }
-    public void setQuantidadeAmortecedores(Integer quantidadeAmortecedores) {
-        this.quantidadeAmortecedores = quantidadeAmortecedores;
-    }
-    public Integer getQuantidadeFreios() {return quantidadePneus * 2;}
-    public void setQuantidadeFreios(Integer quantidadeFreios) {
-        this.quantidadeFreios = quantidadeFreios;
+    public String getCombustivel() {return combustivel = "FLEX"; }
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
     }
 
     public String getMotor() {
@@ -64,12 +58,11 @@ public class Carro {
     }
 
      public void imprimeValores(){
-     System.out.println(" ======== ORDEM DE PRODUÇÃO ========");
-     System.out.println("Quantidade Pneus => " + getQuantidadePneus());
-     System.out.println("Quantidade de Calotas => " + getQuantidadeCalotas());
-     System.out.println("Quantidade de Parafusos dos Pneus => " + getQuantidadeParafusoPneu());
-     System.out.println("Quantidade de Amortecedores => " + getQuantidadeAmortecedores());
-     System.out.println("Quantidade de Freios => " + getQuantidadeFreios() + " (Freios Duplos)");
+     System.out.println(" ======== CADASTRO DE VEÍCULOS ========");
+     System.out.println("Quantidade de Portas => " + getQuantidadePortas());
+     System.out.println("Número do Chassi => " + getNumeroChassi());
+     System.out.println("Ano de Fabricação  => " + getAnoFabricacao());
+     System.out.println("Tipo de Combustível => " + getCombustivel());
      System.out.println("Cor => " + getCor());
      System.out.println("Motor => " + getMotor());
      System.out.println("Acabamento => " +getAcabamento());
