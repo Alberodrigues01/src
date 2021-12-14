@@ -17,7 +17,7 @@ public class Carro {
     public Integer getQuantidadePortas(){
         return quantidadePortas = 4;
     }
-    public void setQuantidadePneus(Integer quantidadePortas){
+    public void setQuantidadePortas(Integer quantidadePortas){
         this.quantidadePortas = quantidadePortas;
     }
     public String getCor() {
