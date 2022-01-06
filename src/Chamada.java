@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Chamada {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         System.out.println("=== DIÁRIO DE CLASSE: Controle de Chamadas ===");
 
